@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 
 //reducers
-import entitiesReducer from './entities_reducer';
+import pokemonReducer from './pokemon_reducer';
 
-export default combineReducers({
-  entities: entitiesReducer
+const RootReducer = combineReducers({
+  pokemon: pokemonReducer
 });
+
+export default RootReducer;
